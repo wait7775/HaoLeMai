@@ -4,6 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'lib-flexible'
+// import Mint from 'mint-ui'
+// Vue.use(Mint)
+// import MintUI from 'mint-ui'
+// import 'mint-ui/lib/style.css'
+// Vue.use(MintUI)
+import { Swipe, SwipeItem } from 'mint-ui'
+Vue.component(Swipe.name, Swipe)
+Vue.component(SwipeItem.name, SwipeItem)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
