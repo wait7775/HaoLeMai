@@ -5,7 +5,7 @@
         <i class="iconfont icon-shouye"></i>
         <span>首页</span>
       </router-link>
-      <router-link to="/cartgory" tag="li">
+      <router-link to="/category" tag="li">
         <i class="iconfont icon-leimupinleifenleileibie"></i>
         <span>分类</span>
       </router-link>
@@ -21,6 +21,7 @@
         <i class="iconfont icon-user-line"></i>
         <span>我的</span>
       </router-link>
+      <router-view />
     </ul>
   </div>
 </template>
@@ -33,7 +34,8 @@ export default {};
   bottom: 0;
   left: 0;
   width: 100%;
- 
+  background: #fff;
+  z-index: 20000;
 }
 .nav ul {
   display: flex;
@@ -50,6 +52,7 @@ export default {};
 .nav ul li i {
   font-style: normal;
   font-size: 48px;
+  padding-bottom: 20px;
 }
 
 .router-link-active {

@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-    <NavList></NavList>
+    <!-- <NavList></NavList> -->
+    <!-- <home></home> -->
     <router-view />
   </div>
 </template>
 
 <script>
-import NavList from "@/common/navList";
+// import home from "@/components/home/index";
 
 export default {
   name: "App",
   components: {
-    NavList
+    // home
+    // NavList
   }
 };
 </script>
 
-<style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
-@import url("./assets/reset.css");
+<style lang="less">
+html,body{
+  background: #fff;
+      height:100%;
+      ul li{
+        list-style: none;
+      }
+}
+#app{
+height:100%;
+}
+@import url("./assets/css/reset.css");
 </style>

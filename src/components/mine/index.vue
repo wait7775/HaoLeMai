@@ -1,9 +1,19 @@
 <template>
-<div>mine</div>
+<div class="mine">
+  <Login></Login>
+</div>
 </template>
+
 <script>
+import Login from './login'
+
 export default {
-    
+  components: {
+    Login
+  }
 }
 </script>
-<style ></style>
+
+<style scoped>
+
+</style>
